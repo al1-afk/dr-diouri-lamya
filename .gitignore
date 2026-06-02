@@ -4,3 +4,8 @@ node_modules/
 .vscode/
 .idea/
 Thumbs.db
+
+# Secrets — NE JAMAIS COMMITER
+.env
+.env.local
+.env.*.local

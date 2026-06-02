@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Contactez le Cabinet Dr DIOURI Lamya à Oujda. Prise de rendez-vous en ligne, téléphone, WhatsApp, formulaire. Adresse, horaires, plan d'accès." />
+  <title>Contact &amp; Rendez-vous — Cabinet Dr DIOURI Lamya, Oujda</title>
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Cpath d='M30 20 L30 80 L55 80 C72 80 82 67 82 50 C82 33 72 20 55 20 Z' stroke='%231a3a5c' stroke-width='6' fill='none'/%3E%3Ccircle cx='58' cy='50' r='8' fill='%231a3a5c'/%3E%3C/svg%3E" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300;400;500;600;700&family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <div class="cursor" id="cursor"></div>
+  <div class="cursor-follower" id="cursorFollower"></div>
+  <div class="progress-bar" id="progressBar"></div>
+
+  <nav class="navbar" id="navbar">
+    <div class="container nav-container">
+      <a href="index.html" class="logo">
+        <svg viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path d="M30 20 L30 80 L55 80 C72 80 82 67 82 50 C82 33 72 20 55 20 Z" stroke="currentColor" stroke-width="4" fill="none"/>
+          <circle cx="58" cy="50" r="6" fill="currentColor"/>
+          <line x1="35" y1="40" x2="48" y2="40" stroke="currentColor" stroke-width="3"/>
+          <line x1="35" y1="50" x2="48" y2="50" stroke="currentColor" stroke-width="3"/>
+          <line x1="35" y1="60" x2="48" y2="60" stroke="currentColor" stroke-width="3"/>
+        </svg>
+        <div class="logo-text">
+          <span class="logo-name">Dr DIOURI Lamya</span>
+          <span class="logo-sub">Médecin spécialiste en Radiologie</span>
+        </div>
+      </a>
+      <ul class="nav-menu" id="navMenu">
+        <li><a href="index.html" class="nav-link">Accueil</a></li>
+        <li><a href="cabinet.html" class="nav-link">Le cabinet</a></li>
+        <li><a href="examens.html" class="nav-link">Examens</a></li>
+        <li><a href="infos-patients.html" class="nav-link">Informations patients</a></li>
+        <li><a href="contact.html" class="nav-link">Contact</a></li>
+      </ul>
+      <div class="nav-actions">
+        <a href="#contactForm" class="btn btn-primary btn-sm">
+          <span>Prendre rendez-vous</span>
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+        </a>
+        <button class="nav-toggle" id="navToggle" aria-label="Menu">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </div>
+  </nav>
+
+  <section class="page-hero">
+    <div class="container page-hero-inner">
+      <div class="page-hero-breadcrumb" data-reveal>
+        <a href="index.html">Accueil</a>
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 18l6-6-6-6"/></svg>
+        <span>Contact &amp; Rendez-vous</span>
+      </div>
+      <h1 data-reveal data-reveal-delay="100">
+        Réservez votre <span class="title-italic">consultation</span><br/>
+        en toute simplicité.
+      </h1>
+      <p class="page-hero-lead" data-reveal data-reveal-delay="200">
+        Le cabinet vous accueille du lundi au samedi. Plusieurs moyens à votre disposition pour prendre rendez-vous ou nous contacter.
+      </p>
+    </div>
+  </section>
+
+  <section class="contact" id="contact" style="padding-top: 40px;">
+    <div class="container">
+      <div class="contact-grid">
+        <div class="contact-info" data-reveal>
+          <span class="section-tag">Coordonnées</span>
+          <h2 class="section-title">
+            Une équipe à votre <span class="title-italic">écoute</span>.
+          </h2>
+          <p class="section-lead">
+            Pour toute demande ou prise de rendez-vous, n'hésitez pas à nous contacter par téléphone, WhatsApp ou via le formulaire ci-contre.
+          </p>
+
+          <div class="contact-cards">
+            <div class="contact-item">
+              <div class="ci-icon">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+              </div>
+              <div>
+                <div class="ci-label">Adresse</div>
+                <div class="ci-value">Oujda, Maroc</div>
+              </div>
+            </div>
+            <div class="contact-item">
+              <div class="ci-icon">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+              </div>
+              <div>
+                <div class="ci-label">Téléphone</div>
+                <div class="ci-value"><a href="tel:+212632705701" style="color:inherit;text-decoration:none;">+212 6 32 70 57 01</a></div>
+              </div>
+            </div>
+            <div class="contact-item">
+              <div class="ci-icon" style="background:#25D366;color:#fff;">
+                <svg viewBox="0 0 32 32" fill="currentColor" aria-hidden="true"><path d="M16.003 3.2a12.8 12.8 0 0 0-11.04 19.317L3.2 28.8l6.475-1.694A12.8 12.8 0 1 0 16.003 3.2zm5.823 15.447c-.319-.16-1.886-.93-2.18-1.036-.293-.107-.506-.16-.72.16-.213.32-.825 1.036-1.012 1.249-.187.213-.373.24-.692.08-.319-.16-1.348-.497-2.566-1.585-.948-.846-1.588-1.892-1.775-2.211-.187-.32-.02-.493.14-.652.144-.143.319-.373.479-.56.16-.187.213-.32.32-.534.107-.213.054-.4-.027-.56-.08-.16-.72-1.733-.986-2.373-.26-.626-.524-.54-.72-.55-.187-.008-.4-.01-.613-.01a1.179 1.179 0 0 0-.852.4c-.293.32-1.119 1.093-1.119 2.665 0 1.572 1.146 3.094 1.305 3.307.16.213 2.255 3.443 5.464 4.83.764.33 1.36.527 1.824.674.766.244 1.464.21 2.014.127.614-.092 1.886-.77 2.152-1.515.266-.745.266-1.385.187-1.515-.08-.133-.293-.213-.612-.373z"/></svg>
+              </div>
+              <div>
+                <div class="ci-label">WhatsApp</div>
+                <div class="ci-value"><a href="https://wa.me/212632705701" target="_blank" rel="noopener" style="color:inherit;text-decoration:none;">Écrire un message</a></div>
+              </div>
+            </div>
+            <div class="contact-item">
+              <div class="ci-icon">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+              </div>
+              <div>
+                <div class="ci-label">Email</div>
+                <div class="ci-value"><a href="mailto:info@drlamyadiouri.com" style="color:inherit;text-decoration:none;">info@drlamyadiouri.com</a></div>
+              </div>
+            </div>
+            <div class="contact-item">
+              <div class="ci-icon">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
+              </div>
+              <div>
+                <div class="ci-label">Horaires</div>
+                <div class="ci-value">Lun - Ven : 8h00 - 19h00<br/>Sam : 9h00 - 13h00</div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="contact-form-wrap" data-reveal data-reveal-delay="200">
+          <form class="contact-form" id="contactForm">
+            <div class="form-header">
+              <h3>Demande de rendez-vous</h3>
+              <p>Remplissez ce formulaire, nous vous recontactons sous 24h.</p>
+            </div>
+            <div class="form-row">
+              <div class="form-field">
+                <label>Prénom</label>
+                <input type="text" name="firstname" required placeholder="Votre prénom" />
+              </div>
+              <div class="form-field">
+                <label>Nom</label>
+                <input type="text" name="lastname" required placeholder="Votre nom" />
+              </div>
+            </div>
+            <div class="form-row">
+              <div class="form-field">
+                <label>Email</label>
+                <input type="email" name="email" required placeholder="vous@email.com" />
+              </div>
+              <div class="form-field">
+                <label>Téléphone</label>
+                <input type="tel" name="phone" required placeholder="+212 6 00 00 00 00" />
+              </div>
+            </div>
+            <div class="form-field">
+              <label>Type d'examen souhaité</label>
+              <select name="exam" required>
+                <option value="">Sélectionnez un examen</option>
+                <option>Radiographie</option>
+                <option>IRM</option>
+                <option>Scanner</option>
+                <option>Échographie</option>
+                <option>Mammographie</option>
+                <option>Échographie Doppler</option>
+                <option>Autre / À déterminer</option>
+              </select>
+            </div>
+            <div class="form-field">
+              <label>Message (facultatif)</label>
+              <textarea name="message" rows="4" placeholder="Précisez votre demande, vos disponibilités..."></textarea>
+            </div>
+            <div class="form-field form-check">
+              <input type="checkbox" id="consent" required />
+              <label for="consent">J'accepte que mes données soient utilisées pour me recontacter dans le cadre de ma demande.</label>
+            </div>
+            <button type="submit" class="btn btn-primary btn-lg btn-block">
+              <span>Envoyer ma demande</span>
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+            </button>
+            <div class="form-success" id="formSuccess">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"/></svg>
+              <span>Demande envoyée avec succès. Nous vous recontactons rapidement.</span>
+            </div>
+          </form>
+        </div>
+      </div>
+
+      <div class="map-wrap" data-reveal>
+        <iframe
+          src="https://www.google.com/maps?q=Oujda%2C+Maroc&z=13&output=embed"
+          loading="lazy"
+          referrerpolicy="no-referrer-when-downgrade"
+          title="Localisation du cabinet Dr DIOURI Lamya — Oujda, Maroc"
+          allowfullscreen></iframe>
+      </div>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-top">
+        <div class="footer-brand">
+          <a href="index.html" class="logo logo-footer">
+            <svg viewBox="0 0 100 100" fill="none"><path d="M30 20 L30 80 L55 80 C72 80 82 67 82 50 C82 33 72 20 55 20 Z" stroke="currentColor" stroke-width="4" fill="none"/><circle cx="58" cy="50" r="6" fill="currentColor"/><line x1="35" y1="40" x2="48" y2="40" stroke="currentColor" stroke-width="3"/><line x1="35" y1="50" x2="48" y2="50" stroke="currentColor" stroke-width="3"/><line x1="35" y1="60" x2="48" y2="60" stroke="currentColor" stroke-width="3"/></svg>
+            <div class="logo-text">
+              <span class="logo-name">Dr DIOURI Lamya</span>
+              <span class="logo-sub">Médecin spécialiste en Radiologie</span>
+            </div>
+          </a>
+          <p class="footer-desc">L'imagerie médicale de précision au service de votre santé.</p>
+        </div>
+        <div class="footer-col">
+          <h4>Cabinet</h4>
+          <ul>
+            <li><a href="cabinet.html">Le cabinet</a></li>
+            <li><a href="cabinet.html#expertise">Expertise</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>Examens</h4>
+          <ul>
+            <li><a href="examens.html#irm">IRM</a></li>
+            <li><a href="examens.html#scanner">Scanner</a></li>
+            <li><a href="examens.html#echographie">Échographie</a></li>
+            <li><a href="examens.html#radiographie">Radiographie</a></li>
+            <li><a href="examens.html#mammographie">Mammographie</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>Informations</h4>
+          <ul>
+            <li><a href="infos-patients.html">Informations patients</a></li>
+            <li><a href="#">Mentions légales</a></li>
+            <li><a href="#">Politique de confidentialité</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>Contact</h4>
+          <ul class="footer-contact">
+            <li>Oujda, Maroc</li>
+            <li>+212 6 32 70 57 01</li>
+            <li>info@drlamyadiouri.com</li>
+          </ul>
+          <a href="#contactForm" class="btn btn-light btn-sm">Prendre rendez-vous</a>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>© <span id="year"></span> Cabinet Dr DIOURI Lamya — Tous droits réservés.</p>
+        <p>Conçu avec exigence pour l'excellence médicale.</p>
+      </div>
+    </div>
+  </footer>
+
+  <a href="https://wa.me/212632705701?text=Bonjour%20Dr%20DIOURI%2C%20je%20souhaite%20prendre%20rendez-vous." target="_blank" rel="noopener" class="whatsapp-float" aria-label="WhatsApp - Prendre rendez-vous">
+    <svg viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+      <path d="M16.003 3.2a12.8 12.8 0 0 0-11.04 19.317L3.2 28.8l6.475-1.694A12.8 12.8 0 1 0 16.003 3.2zm0 23.36c-2 0-3.965-.535-5.682-1.547l-.407-.241-3.842 1.006 1.025-3.747-.265-.42a10.563 10.563 0 1 1 9.172 4.949zm5.823-7.913c-.319-.16-1.886-.93-2.18-1.036-.293-.107-.506-.16-.72.16-.213.32-.825 1.036-1.012 1.249-.187.213-.373.24-.692.08-.319-.16-1.348-.497-2.566-1.585-.948-.846-1.588-1.892-1.775-2.211-.187-.32-.02-.493.14-.652.144-.143.319-.373.479-.56.16-.187.213-.32.32-.534.107-.213.054-.4-.027-.56-.08-.16-.72-1.733-.986-2.373-.26-.626-.524-.54-.72-.55-.187-.008-.4-.01-.613-.01a1.179 1.179 0 0 0-.852.4c-.293.32-1.119 1.093-1.119 2.665 0 1.572 1.146 3.094 1.305 3.307.16.213 2.255 3.443 5.464 4.83.764.33 1.36.527 1.824.674.766.244 1.464.21 2.014.127.614-.092 1.886-.77 2.152-1.515.266-.745.266-1.385.187-1.515-.08-.133-.293-.213-.612-.373z"/>
+    </svg>
+  </a>
+
+  <script src="script.js"></script>
+</body>
+</html>

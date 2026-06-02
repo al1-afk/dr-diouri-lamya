@@ -1,0 +1,359 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Examens d'imagerie médicale au cabinet Dr DIOURI Lamya à Oujda : IRM, Scanner, Échographie, Radiographie, Mammographie, Doppler. Description, préparation, durée." />
+  <title>Examens d'imagerie — IRM, Scanner, Échographie | Dr DIOURI Lamya, Oujda</title>
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Cpath d='M30 20 L30 80 L55 80 C72 80 82 67 82 50 C82 33 72 20 55 20 Z' stroke='%231a3a5c' stroke-width='6' fill='none'/%3E%3Ccircle cx='58' cy='50' r='8' fill='%231a3a5c'/%3E%3C/svg%3E" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300;400;500;600;700&family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <div class="cursor" id="cursor"></div>
+  <div class="cursor-follower" id="cursorFollower"></div>
+  <div class="progress-bar" id="progressBar"></div>
+
+  <nav class="navbar" id="navbar">
+    <div class="container nav-container">
+      <a href="index.html" class="logo">
+        <svg viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path d="M30 20 L30 80 L55 80 C72 80 82 67 82 50 C82 33 72 20 55 20 Z" stroke="currentColor" stroke-width="4" fill="none"/>
+          <circle cx="58" cy="50" r="6" fill="currentColor"/>
+          <line x1="35" y1="40" x2="48" y2="40" stroke="currentColor" stroke-width="3"/>
+          <line x1="35" y1="50" x2="48" y2="50" stroke="currentColor" stroke-width="3"/>
+          <line x1="35" y1="60" x2="48" y2="60" stroke="currentColor" stroke-width="3"/>
+        </svg>
+        <div class="logo-text">
+          <span class="logo-name">Dr DIOURI Lamya</span>
+          <span class="logo-sub">Médecin spécialiste en Radiologie</span>
+        </div>
+      </a>
+      <ul class="nav-menu" id="navMenu">
+        <li><a href="index.html" class="nav-link">Accueil</a></li>
+        <li><a href="cabinet.html" class="nav-link">Le cabinet</a></li>
+        <li><a href="examens.html" class="nav-link">Examens</a></li>
+        <li><a href="infos-patients.html" class="nav-link">Informations patients</a></li>
+        <li><a href="contact.html" class="nav-link">Contact</a></li>
+      </ul>
+      <div class="nav-actions">
+        <a href="contact.html" class="btn btn-primary btn-sm">
+          <span>Prendre rendez-vous</span>
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+        </a>
+        <button class="nav-toggle" id="navToggle" aria-label="Menu">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </div>
+  </nav>
+
+  <section class="page-hero">
+    <div class="container page-hero-inner">
+      <div class="page-hero-breadcrumb" data-reveal>
+        <a href="index.html">Accueil</a>
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 18l6-6-6-6"/></svg>
+        <span>Examens</span>
+      </div>
+      <h1 data-reveal data-reveal-delay="100">
+        Nos <span class="title-italic">examens</span><br/>
+        d'imagerie médicale.
+      </h1>
+      <p class="page-hero-lead" data-reveal data-reveal-delay="200">
+        Une gamme complète d'examens réalisés avec des équipements de dernière génération, adaptés à chaque situation clinique.
+      </p>
+    </div>
+  </section>
+
+  <div class="container">
+
+    <article class="exam-detail" id="irm">
+      <div class="exam-detail-grid">
+        <div class="exam-detail-img" data-reveal>
+          <img src="images/service-irm.jpg" alt="IRM — imagerie par résonance magnétique" width="800" height="600" loading="lazy" decoding="async" />
+        </div>
+        <div data-reveal data-reveal-delay="100">
+          <div class="exam-detail-num">01</div>
+          <h2>IRM</h2>
+          <p class="exam-detail-lead">
+            L'imagerie par résonance magnétique offre une analyse détaillée des tissus mous, du cerveau, de la moelle épinière, des articulations et des organes abdominaux. Examen sans rayonnement ionisant.
+          </p>
+          <div class="exam-detail-specs">
+            <div class="spec"><span class="spec-label">Durée</span><span class="spec-value">20–45 min</span></div>
+            <div class="spec"><span class="spec-label">Préparation</span><span class="spec-value">Jeûne possible si injection</span></div>
+            <div class="spec"><span class="spec-label">Résultats</span><span class="spec-value">Compte-rendu le jour même</span></div>
+            <div class="spec"><span class="spec-label">Rayonnement</span><span class="spec-value">Aucun</span></div>
+          </div>
+          <a href="contact.html" class="btn btn-primary">
+            <span>Prendre rendez-vous</span>
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+          </a>
+        </div>
+      </div>
+    </article>
+
+    <article class="exam-detail reverse" id="scanner">
+      <div class="exam-detail-grid">
+        <div data-reveal>
+          <div class="exam-detail-num">02</div>
+          <h2>Scanner</h2>
+          <p class="exam-detail-lead">
+            La tomodensitométrie (TDM) permet un diagnostic rapide et précis des pathologies thoraciques, abdominales, osseuses et vasculaires grâce à des coupes haute résolution.
+          </p>
+          <div class="exam-detail-specs">
+            <div class="spec"><span class="spec-label">Durée</span><span class="spec-value">10–20 min</span></div>
+            <div class="spec"><span class="spec-label">Préparation</span><span class="spec-value">À jeun si injection iodée</span></div>
+            <div class="spec"><span class="spec-label">Résultats</span><span class="spec-value">Compte-rendu le jour même</span></div>
+            <div class="spec"><span class="spec-label">Rayonnement</span><span class="spec-value">Faible dose, optimisé</span></div>
+          </div>
+          <a href="contact.html" class="btn btn-primary">
+            <span>Prendre rendez-vous</span>
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+          </a>
+        </div>
+        <div class="exam-detail-img" data-reveal data-reveal-delay="100">
+          <img src="images/service-scanner.jpg" alt="Scanner — tomodensitométrie haute résolution" width="800" height="600" loading="lazy" decoding="async" />
+        </div>
+      </div>
+    </article>
+
+    <article class="exam-detail" id="echographie">
+      <div class="exam-detail-grid">
+        <div class="exam-detail-img" data-reveal>
+          <img src="images/service-echographie.jpg" alt="Échographie médicale" width="800" height="600" loading="lazy" decoding="async" />
+        </div>
+        <div data-reveal data-reveal-delay="100">
+          <div class="exam-detail-num">03</div>
+          <h2>Échographie</h2>
+          <p class="exam-detail-lead">
+            Examen sans rayonnement utilisant les ultrasons pour explorer les organes abdominaux, pelviens, thyroïdiens, et assurer le suivi de grossesse en temps réel.
+          </p>
+          <div class="exam-detail-specs">
+            <div class="spec"><span class="spec-label">Durée</span><span class="spec-value">15–30 min</span></div>
+            <div class="spec"><span class="spec-label">Préparation</span><span class="spec-value">Variable selon l'examen</span></div>
+            <div class="spec"><span class="spec-label">Résultats</span><span class="spec-value">Immédiats</span></div>
+            <div class="spec"><span class="spec-label">Rayonnement</span><span class="spec-value">Aucun</span></div>
+          </div>
+          <a href="contact.html" class="btn btn-primary">
+            <span>Prendre rendez-vous</span>
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+          </a>
+        </div>
+      </div>
+    </article>
+
+    <article class="exam-detail reverse" id="radiographie">
+      <div class="exam-detail-grid">
+        <div data-reveal>
+          <div class="exam-detail-num">04</div>
+          <h2>Radiographie</h2>
+          <p class="exam-detail-lead">
+            Examen rapide et indolore pour visualiser les structures osseuses, les articulations, le thorax et certains organes. Première intention dans de nombreuses pathologies.
+          </p>
+          <div class="exam-detail-specs">
+            <div class="spec"><span class="spec-label">Durée</span><span class="spec-value">5–10 min</span></div>
+            <div class="spec"><span class="spec-label">Préparation</span><span class="spec-value">Aucune</span></div>
+            <div class="spec"><span class="spec-label">Résultats</span><span class="spec-value">Immédiats</span></div>
+            <div class="spec"><span class="spec-label">Rayonnement</span><span class="spec-value">Très faible dose</span></div>
+          </div>
+          <a href="contact.html" class="btn btn-primary">
+            <span>Prendre rendez-vous</span>
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+          </a>
+        </div>
+        <div class="exam-detail-img" data-reveal data-reveal-delay="100">
+          <img src="images/service-radiographie.jpg" alt="Radiographie médicale" width="800" height="600" loading="lazy" decoding="async" />
+        </div>
+      </div>
+    </article>
+
+    <article class="exam-detail" id="mammographie">
+      <div class="exam-detail-grid">
+        <div class="exam-detail-img" data-reveal>
+          <img src="images/service-mammographie.jpg" alt="Mammographie — dépistage du sein" width="800" height="600" loading="lazy" decoding="async" />
+        </div>
+        <div data-reveal data-reveal-delay="100">
+          <div class="exam-detail-num">05</div>
+          <h2>Mammographie</h2>
+          <p class="exam-detail-lead">
+            Dépistage et diagnostic du cancer du sein avec un confort patient optimisé. Examen recommandé à partir de 50 ans dans le cadre du dépistage organisé.
+          </p>
+          <div class="exam-detail-specs">
+            <div class="spec"><span class="spec-label">Durée</span><span class="spec-value">15–20 min</span></div>
+            <div class="spec"><span class="spec-label">Préparation</span><span class="spec-value">Pas de déodorant ni crème</span></div>
+            <div class="spec"><span class="spec-label">Résultats</span><span class="spec-value">Compte-rendu rapide</span></div>
+            <div class="spec"><span class="spec-label">Recommandé</span><span class="spec-value">Tous les 2 ans dès 50 ans</span></div>
+          </div>
+          <a href="contact.html" class="btn btn-primary">
+            <span>Prendre rendez-vous</span>
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+          </a>
+        </div>
+      </div>
+    </article>
+
+    <article class="exam-detail reverse" id="doppler">
+      <div class="exam-detail-grid">
+        <div data-reveal>
+          <div class="exam-detail-num">06</div>
+          <h2>Échographie Doppler</h2>
+          <p class="exam-detail-lead">
+            Étude vasculaire complète pour évaluer la circulation sanguine artérielle et veineuse en temps réel. Indispensable dans le diagnostic des pathologies vasculaires.
+          </p>
+          <div class="exam-detail-specs">
+            <div class="spec"><span class="spec-label">Durée</span><span class="spec-value">20–40 min</span></div>
+            <div class="spec"><span class="spec-label">Préparation</span><span class="spec-value">Selon zone examinée</span></div>
+            <div class="spec"><span class="spec-label">Résultats</span><span class="spec-value">Immédiats</span></div>
+            <div class="spec"><span class="spec-label">Rayonnement</span><span class="spec-value">Aucun</span></div>
+          </div>
+          <a href="contact.html" class="btn btn-primary">
+            <span>Prendre rendez-vous</span>
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+          </a>
+        </div>
+        <div class="exam-detail-img" data-reveal data-reveal-delay="100">
+          <img src="images/service-doppler.jpg" alt="Échographie Doppler" width="800" height="600" loading="lazy" decoding="async" />
+        </div>
+      </div>
+    </article>
+
+  </div>
+
+  <section class="faq-section">
+    <div class="container">
+      <div class="section-head section-head-center" data-reveal>
+        <span class="section-tag">Questions fréquentes</span>
+        <h2 class="section-title">
+          Vos <span class="title-italic">questions</span>, nos réponses.
+        </h2>
+      </div>
+      <div class="faq-list" data-reveal data-reveal-delay="100">
+        <details class="faq-item">
+          <summary>Quelle est la différence entre un Scanner et une IRM ?</summary>
+          <div class="faq-item-body">Le scanner utilise les rayons X et fournit des images très rapides, idéales pour les urgences, os, poumons et abdomen. L'IRM utilise des champs magnétiques (aucun rayonnement) et excelle pour les tissus mous, le cerveau, la moelle, les articulations et les organes pelviens.</div>
+        </details>
+        <details class="faq-item">
+          <summary>Faut-il une ordonnance pour passer un examen ?</summary>
+          <div class="faq-item-body">Oui, la plupart des examens d'imagerie nécessitent une prescription médicale. Apportez-la le jour de l'examen, ainsi que vos précédents examens si disponibles.</div>
+        </details>
+        <details class="faq-item">
+          <summary>Y a-t-il un risque lié aux rayons X ?</summary>
+          <div class="faq-item-body">Les doses utilisées sont très faibles et optimisées au cabinet selon le principe ALARA (As Low As Reasonably Achievable). Le bénéfice diagnostique dépasse très largement le risque, qui reste négligeable pour un examen ponctuel.</div>
+        </details>
+        <details class="faq-item">
+          <summary>Combien de temps pour recevoir mes résultats ?</summary>
+          <div class="faq-item-body">Pour la majorité des examens, le compte-rendu est remis le jour même. Pour les examens complexes nécessitant une analyse approfondie, les résultats sont disponibles sous 24 à 48h.</div>
+        </details>
+        <details class="faq-item">
+          <summary>L'examen est-il pris en charge par l'assurance ?</summary>
+          <div class="faq-item-body">La plupart des examens prescrits sont remboursés par la CNSS, la CNOPS et la majorité des mutuelles. Le cabinet vous fournit tous les documents nécessaires au remboursement.</div>
+        </details>
+        <details class="faq-item">
+          <summary>Puis-je faire un examen en étant enceinte ?</summary>
+          <div class="faq-item-body">Échographie et IRM sont possibles. La radiographie et le scanner sont à éviter sauf urgence vitale. Signalez systématiquement une grossesse ou un doute avant tout examen.</div>
+        </details>
+      </div>
+    </div>
+  </section>
+
+  <section class="cta-banner">
+    <div class="container">
+      <div class="cta-banner-inner" data-reveal>
+        <div class="cta-banner-bg"></div>
+        <div class="cta-content">
+          <span class="section-tag tag-light">Prêt à prendre rendez-vous ?</span>
+          <h2>Un examen,<br/><span class="title-italic">simplement</span>.</h2>
+          <p>Réservez votre créneau en ligne ou par téléphone. Notre équipe vous accompagne dans le choix de l'examen adapté.</p>
+          <div class="cta-actions">
+            <a href="contact.html" class="btn btn-light btn-lg">
+              <span>Prendre rendez-vous</span>
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+            </a>
+            <a href="tel:+212632705701" class="btn btn-outline-light btn-lg">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+              <span>Nous appeler</span>
+            </a>
+          </div>
+        </div>
+        <div class="cta-visual">
+          <div class="cta-clock">
+            <svg viewBox="0 0 200 200" fill="none">
+              <circle cx="100" cy="100" r="90" stroke="currentColor" stroke-width="1" stroke-dasharray="2 4" opacity="0.4"/>
+              <circle cx="100" cy="100" r="70" stroke="currentColor" stroke-width="1" opacity="0.6"/>
+              <circle cx="100" cy="100" r="4" fill="currentColor"/>
+              <line x1="100" y1="100" x2="100" y2="50" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+              <line x1="100" y1="100" x2="135" y2="115" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+            </svg>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-top">
+        <div class="footer-brand">
+          <a href="index.html" class="logo logo-footer">
+            <svg viewBox="0 0 100 100" fill="none"><path d="M30 20 L30 80 L55 80 C72 80 82 67 82 50 C82 33 72 20 55 20 Z" stroke="currentColor" stroke-width="4" fill="none"/><circle cx="58" cy="50" r="6" fill="currentColor"/><line x1="35" y1="40" x2="48" y2="40" stroke="currentColor" stroke-width="3"/><line x1="35" y1="50" x2="48" y2="50" stroke="currentColor" stroke-width="3"/><line x1="35" y1="60" x2="48" y2="60" stroke="currentColor" stroke-width="3"/></svg>
+            <div class="logo-text">
+              <span class="logo-name">Dr DIOURI Lamya</span>
+              <span class="logo-sub">Médecin spécialiste en Radiologie</span>
+            </div>
+          </a>
+          <p class="footer-desc">L'imagerie médicale de précision au service de votre santé.</p>
+        </div>
+        <div class="footer-col">
+          <h4>Cabinet</h4>
+          <ul>
+            <li><a href="cabinet.html">Le cabinet</a></li>
+            <li><a href="cabinet.html#expertise">Expertise</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>Examens</h4>
+          <ul>
+            <li><a href="#irm">IRM</a></li>
+            <li><a href="#scanner">Scanner</a></li>
+            <li><a href="#echographie">Échographie</a></li>
+            <li><a href="#radiographie">Radiographie</a></li>
+            <li><a href="#mammographie">Mammographie</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>Informations</h4>
+          <ul>
+            <li><a href="infos-patients.html">Informations patients</a></li>
+            <li><a href="#">Mentions légales</a></li>
+            <li><a href="#">Politique de confidentialité</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>Contact</h4>
+          <ul class="footer-contact">
+            <li>Oujda, Maroc</li>
+            <li>+212 6 32 70 57 01</li>
+            <li>info@drlamyadiouri.com</li>
+          </ul>
+          <a href="contact.html" class="btn btn-light btn-sm">Prendre rendez-vous</a>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>© <span id="year"></span> Cabinet Dr DIOURI Lamya — Tous droits réservés.</p>
+        <p>Conçu avec exigence pour l'excellence médicale.</p>
+      </div>
+    </div>
+  </footer>
+
+  <a href="https://wa.me/212632705701?text=Bonjour%20Dr%20DIOURI%2C%20je%20souhaite%20prendre%20rendez-vous." target="_blank" rel="noopener" class="whatsapp-float" aria-label="WhatsApp - Prendre rendez-vous">
+    <svg viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+      <path d="M16.003 3.2a12.8 12.8 0 0 0-11.04 19.317L3.2 28.8l6.475-1.694A12.8 12.8 0 1 0 16.003 3.2zm0 23.36c-2 0-3.965-.535-5.682-1.547l-.407-.241-3.842 1.006 1.025-3.747-.265-.42a10.563 10.563 0 1 1 9.172 4.949zm5.823-7.913c-.319-.16-1.886-.93-2.18-1.036-.293-.107-.506-.16-.72.16-.213.32-.825 1.036-1.012 1.249-.187.213-.373.24-.692.08-.319-.16-1.348-.497-2.566-1.585-.948-.846-1.588-1.892-1.775-2.211-.187-.32-.02-.493.14-.652.144-.143.319-.373.479-.56.16-.187.213-.32.32-.534.107-.213.054-.4-.027-.56-.08-.16-.72-1.733-.986-2.373-.26-.626-.524-.54-.72-.55-.187-.008-.4-.01-.613-.01a1.179 1.179 0 0 0-.852.4c-.293.32-1.119 1.093-1.119 2.665 0 1.572 1.146 3.094 1.305 3.307.16.213 2.255 3.443 5.464 4.83.764.33 1.36.527 1.824.674.766.244 1.464.21 2.014.127.614-.092 1.886-.77 2.152-1.515.266-.745.266-1.385.187-1.515-.08-.133-.293-.213-.612-.373z"/>
+    </svg>
+  </a>
+
+  <script src="script.js"></script>
+</body>
+</html>

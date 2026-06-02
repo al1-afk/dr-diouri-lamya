@@ -1,0 +1,379 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Le Cabinet du Dr DIOURI Lamya à Oujda — Médecin spécialiste en radiologie. Équipements de dernière génération, approche centrée patient, expertise reconnue." />
+  <title>Le Cabinet — Dr DIOURI Lamya, Radiologue à Oujda</title>
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Cpath d='M30 20 L30 80 L55 80 C72 80 82 67 82 50 C82 33 72 20 55 20 Z' stroke='%231a3a5c' stroke-width='6' fill='none'/%3E%3Ccircle cx='58' cy='50' r='8' fill='%231a3a5c'/%3E%3C/svg%3E" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300;400;500;600;700&family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <div class="cursor" id="cursor"></div>
+  <div class="cursor-follower" id="cursorFollower"></div>
+  <div class="progress-bar" id="progressBar"></div>
+
+  <nav class="navbar" id="navbar">
+    <div class="container nav-container">
+      <a href="index.html" class="logo">
+        <svg viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path d="M30 20 L30 80 L55 80 C72 80 82 67 82 50 C82 33 72 20 55 20 Z" stroke="currentColor" stroke-width="4" fill="none"/>
+          <circle cx="58" cy="50" r="6" fill="currentColor"/>
+          <line x1="35" y1="40" x2="48" y2="40" stroke="currentColor" stroke-width="3"/>
+          <line x1="35" y1="50" x2="48" y2="50" stroke="currentColor" stroke-width="3"/>
+          <line x1="35" y1="60" x2="48" y2="60" stroke="currentColor" stroke-width="3"/>
+        </svg>
+        <div class="logo-text">
+          <span class="logo-name">Dr DIOURI Lamya</span>
+          <span class="logo-sub">Médecin spécialiste en Radiologie</span>
+        </div>
+      </a>
+      <ul class="nav-menu" id="navMenu">
+        <li><a href="index.html" class="nav-link">Accueil</a></li>
+        <li><a href="cabinet.html" class="nav-link">Le cabinet</a></li>
+        <li><a href="examens.html" class="nav-link">Examens</a></li>
+        <li><a href="infos-patients.html" class="nav-link">Informations patients</a></li>
+        <li><a href="contact.html" class="nav-link">Contact</a></li>
+      </ul>
+      <div class="nav-actions">
+        <a href="contact.html" class="btn btn-primary btn-sm">
+          <span>Prendre rendez-vous</span>
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+        </a>
+        <button class="nav-toggle" id="navToggle" aria-label="Menu">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </div>
+  </nav>
+
+  <section class="page-hero">
+    <div class="container page-hero-inner">
+      <div class="page-hero-breadcrumb" data-reveal>
+        <a href="index.html">Accueil</a>
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 18l6-6-6-6"/></svg>
+        <span>Le Cabinet</span>
+      </div>
+      <h1 data-reveal data-reveal-delay="100">
+        Un cabinet d'<span class="title-italic">excellence</span><br/>
+        à Oujda.
+      </h1>
+      <p class="page-hero-lead" data-reveal data-reveal-delay="200">
+        Le Dr DIOURI Lamya vous accueille dans un environnement moderne et chaleureux, dédié à la qualité du diagnostic et au respect de chaque patient.
+      </p>
+    </div>
+  </section>
+
+  <section class="about" id="about">
+    <div class="container">
+      <div class="about-grid">
+        <div class="about-images" data-reveal>
+          <div class="about-img-main">
+            <img src="images/about-radiologist.jpg" alt="Dr DIOURI Lamya — Médecin radiologue en consultation" width="900" height="1100" loading="lazy" decoding="async" />
+          </div>
+          <div class="about-img-secondary">
+            <img src="images/about-cabinet.jpg" alt="Cabinet médical moderne — équipements d'imagerie" width="600" height="500" loading="lazy" decoding="async" />
+          </div>
+          <div class="about-experience">
+            <div class="exp-number">15+</div>
+            <div class="exp-label">années<br/>d'excellence</div>
+          </div>
+        </div>
+
+        <div class="about-content" data-reveal data-reveal-delay="200">
+          <span class="section-tag">Dr DIOURI Lamya</span>
+          <h2 class="section-title">
+            Une <span class="title-italic">expertise</span> médicale<br/>
+            au service de votre <span class="title-italic">bien-être</span>.
+          </h2>
+          <p class="section-lead">
+            Médecin spécialiste en radiologie, Dr DIOURI Lamya met son expertise au service d'une médecine humaine, rigoureuse et personnalisée. Diplômée des plus prestigieuses facultés et formée aux dernières avancées en imagerie médicale.
+          </p>
+          <p class="section-text">
+            Chaque examen est réalisé avec la plus haute exigence clinique. La prise en charge est centrée sur le patient : explications claires, écoute attentive et accompagnement à chaque étape du parcours de soins.
+          </p>
+
+          <div class="about-list">
+            <div class="about-item">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"/></svg>
+              <span>Diplômée du Conseil de l'Ordre des Médecins</span>
+            </div>
+            <div class="about-item">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"/></svg>
+              <span>Spécialisation en imagerie diagnostique et interventionnelle</span>
+            </div>
+            <div class="about-item">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"/></svg>
+              <span>Équipements certifiés dernière génération</span>
+            </div>
+            <div class="about-item">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"/></svg>
+              <span>Accompagnement humain et bienveillant</span>
+            </div>
+          </div>
+
+          <div class="about-actions">
+            <a href="contact.html" class="btn btn-primary">
+              <span>Prendre rendez-vous</span>
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+            </a>
+            <a href="examens.html" class="btn btn-link">
+              <span>Découvrir nos examens</span>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="features">
+    <div class="container">
+      <div class="features-grid">
+        <div class="feature-card" data-reveal>
+          <div class="feature-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M12 2L4 7v5c0 5 3.5 9.4 8 10 4.5-.6 8-5 8-10V7l-8-5z"/><path d="M9 12l2 2 4-4"/></svg>
+          </div>
+          <h3>Technologies de pointe</h3>
+          <p>Équipements certifiés dernière génération pour des diagnostics d'une exactitude exceptionnelle.</p>
+        </div>
+        <div class="feature-card" data-reveal data-reveal-delay="100">
+          <div class="feature-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><circle cx="12" cy="8" r="5"/><path d="M8 14a6 6 0 0 0 0 8h8a6 6 0 0 0 0-8"/></svg>
+          </div>
+          <h3>Approche patient</h3>
+          <p>Écoute, pédagogie et accompagnement personnalisé tout au long du parcours diagnostique.</p>
+        </div>
+        <div class="feature-card" data-reveal data-reveal-delay="200">
+          <div class="feature-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M3 3h18v18H3zM3 9h18M9 21V9"/></svg>
+          </div>
+          <h3>Environnement épuré</h3>
+          <p>Cabinet moderne, calme et hygiénique, pensé pour rassurer et accompagner chaque patient.</p>
+        </div>
+        <div class="feature-card" data-reveal data-reveal-delay="300">
+          <div class="feature-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
+          </div>
+          <h3>Délais rapides</h3>
+          <p>Rendez-vous disponibles rapidement et résultats transmis dans les meilleurs délais.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="expertise" id="expertise">
+    <div class="container">
+      <div class="section-head section-head-center" data-reveal>
+        <span class="section-tag tag-light">Domaines d'expertise</span>
+        <h2 class="section-title">
+          Une <span class="title-italic">expertise reconnue</span><br/>
+          en imagerie médicale.
+        </h2>
+      </div>
+      <div class="expertise-grid">
+        <div class="expertise-card" data-reveal>
+          <div class="ec-image"><img src="images/expertise-osteo.jpg" alt="Imagerie ostéo-articulaire" width="900" height="600" loading="lazy" decoding="async" /></div>
+          <div class="ec-content">
+            <span class="ec-tag">Ostéo-articulaire</span>
+            <h3>Imagerie<br/>musculo-squelettique</h3>
+            <p>Analyse approfondie des pathologies osseuses, articulaires et musculaires.</p>
+          </div>
+        </div>
+        <div class="expertise-card expertise-tall" data-reveal data-reveal-delay="100">
+          <div class="ec-image"><img src="images/expertise-neuro.jpg" alt="Neuro-imagerie" width="900" height="800" loading="lazy" decoding="async" /></div>
+          <div class="ec-content">
+            <span class="ec-tag">Neurologique</span>
+            <h3>Neuro-imagerie<br/>avancée</h3>
+            <p>Exploration du système nerveux central et périphérique en haute définition.</p>
+          </div>
+        </div>
+        <div class="expertise-card" data-reveal data-reveal-delay="200">
+          <div class="ec-image"><img src="images/expertise-abdominal.jpg" alt="Imagerie abdomino-pelvienne" width="900" height="600" loading="lazy" decoding="async" /></div>
+          <div class="ec-content">
+            <span class="ec-tag">Abdominal</span>
+            <h3>Imagerie<br/>abdomino-pelvienne</h3>
+            <p>Diagnostic précis des pathologies digestives et urologiques.</p>
+          </div>
+        </div>
+        <div class="expertise-card" data-reveal data-reveal-delay="100">
+          <div class="ec-image"><img src="images/expertise-thoracique.jpg" alt="Imagerie cardio-pulmonaire" width="900" height="600" loading="lazy" decoding="async" /></div>
+          <div class="ec-content">
+            <span class="ec-tag">Thoracique</span>
+            <h3>Imagerie<br/>cardio-pulmonaire</h3>
+            <p>Examen détaillé des structures thoraciques et du cœur.</p>
+          </div>
+        </div>
+        <div class="expertise-card expertise-tall" data-reveal data-reveal-delay="200">
+          <div class="ec-image"><img src="images/expertise-pediatrique.jpg" alt="Imagerie pédiatrique" width="900" height="800" loading="lazy" decoding="async" /></div>
+          <div class="ec-content">
+            <span class="ec-tag">Pédiatrique</span>
+            <h3>Imagerie<br/>pédiatrique</h3>
+            <p>Approche douce et adaptée aux enfants, dans un environnement rassurant.</p>
+          </div>
+        </div>
+        <div class="expertise-card" data-reveal data-reveal-delay="300">
+          <div class="ec-image"><img src="images/expertise-senologie.jpg" alt="Sénologie — imagerie du sein" width="900" height="600" loading="lazy" decoding="async" /></div>
+          <div class="ec-content">
+            <span class="ec-tag">Sénologie</span>
+            <h3>Imagerie<br/>du sein</h3>
+            <p>Dépistage, diagnostic et suivi des pathologies mammaires.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="process">
+    <div class="container">
+      <div class="section-head" data-reveal>
+        <span class="section-tag">Votre parcours</span>
+        <h2 class="section-title">
+          Un parcours <span class="title-italic">simple</span><br/>
+          et rassurant.
+        </h2>
+      </div>
+      <div class="process-timeline">
+        <div class="process-step" data-reveal>
+          <div class="ps-number">01</div>
+          <div class="ps-content">
+            <h3>Prise de rendez-vous</h3>
+            <p>Contactez le cabinet par téléphone, WhatsApp ou via le formulaire en ligne.</p>
+          </div>
+        </div>
+        <div class="process-step" data-reveal data-reveal-delay="100">
+          <div class="ps-number">02</div>
+          <div class="ps-content">
+            <h3>Accueil personnalisé</h3>
+            <p>À votre arrivée, notre équipe vous accueille et vous accompagne dans un environnement chaleureux.</p>
+          </div>
+        </div>
+        <div class="process-step" data-reveal data-reveal-delay="200">
+          <div class="ps-content">
+            <h3>Examen médical</h3>
+            <p>Réalisation de votre examen par Dr DIOURI Lamya avec les équipements les plus performants.</p>
+          </div>
+          <div class="ps-number">03</div>
+        </div>
+        <div class="process-step" data-reveal data-reveal-delay="300">
+          <div class="ps-content">
+            <h3>Résultats &amp; suivi</h3>
+            <p>Compte-rendu détaillé remis rapidement, avec un suivi personnalisé pour votre médecin traitant.</p>
+          </div>
+          <div class="ps-number">04</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="cta-banner">
+    <div class="container">
+      <div class="cta-banner-inner" data-reveal>
+        <div class="cta-banner-bg"></div>
+        <div class="cta-content">
+          <span class="section-tag tag-light">Prêt à prendre rendez-vous ?</span>
+          <h2>Un rendez-vous,<br/><span class="title-italic">simplement</span>.</h2>
+          <p>Notre équipe vous accueille du lundi au samedi. Pour toute demande, contactez-nous directement.</p>
+          <div class="cta-actions">
+            <a href="contact.html" class="btn btn-light btn-lg">
+              <span>Prendre rendez-vous</span>
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+            </a>
+            <a href="tel:+212632705701" class="btn btn-outline-light btn-lg">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+              <span>Nous appeler</span>
+            </a>
+          </div>
+        </div>
+        <div class="cta-visual">
+          <div class="cta-clock">
+            <svg viewBox="0 0 200 200" fill="none">
+              <circle cx="100" cy="100" r="90" stroke="currentColor" stroke-width="1" stroke-dasharray="2 4" opacity="0.4"/>
+              <circle cx="100" cy="100" r="70" stroke="currentColor" stroke-width="1" opacity="0.6"/>
+              <circle cx="100" cy="100" r="4" fill="currentColor"/>
+              <line x1="100" y1="100" x2="100" y2="50" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+              <line x1="100" y1="100" x2="135" y2="115" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+            </svg>
+          </div>
+          <div class="cta-features">
+            <div class="cta-feature">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="11" width="18" height="11" rx="2"/><path d="M7 11V7a5 5 0 0 1 10 0v4"/></svg>
+              <span>Données sécurisées<br/>et confidentielles</span>
+            </div>
+            <div class="cta-feature">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
+              <span>Accueil du lundi<br/>au samedi</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-top">
+        <div class="footer-brand">
+          <a href="index.html" class="logo logo-footer">
+            <svg viewBox="0 0 100 100" fill="none"><path d="M30 20 L30 80 L55 80 C72 80 82 67 82 50 C82 33 72 20 55 20 Z" stroke="currentColor" stroke-width="4" fill="none"/><circle cx="58" cy="50" r="6" fill="currentColor"/><line x1="35" y1="40" x2="48" y2="40" stroke="currentColor" stroke-width="3"/><line x1="35" y1="50" x2="48" y2="50" stroke="currentColor" stroke-width="3"/><line x1="35" y1="60" x2="48" y2="60" stroke="currentColor" stroke-width="3"/></svg>
+            <div class="logo-text">
+              <span class="logo-name">Dr DIOURI Lamya</span>
+              <span class="logo-sub">Médecin spécialiste en Radiologie</span>
+            </div>
+          </a>
+          <p class="footer-desc">L'imagerie médicale de précision au service de votre santé.</p>
+        </div>
+        <div class="footer-col">
+          <h4>Cabinet</h4>
+          <ul>
+            <li><a href="cabinet.html">Le cabinet</a></li>
+            <li><a href="cabinet.html#expertise">Expertise</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>Examens</h4>
+          <ul>
+            <li><a href="examens.html#irm">IRM</a></li>
+            <li><a href="examens.html#scanner">Scanner</a></li>
+            <li><a href="examens.html#echographie">Échographie</a></li>
+            <li><a href="examens.html#radiographie">Radiographie</a></li>
+            <li><a href="examens.html#mammographie">Mammographie</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>Informations</h4>
+          <ul>
+            <li><a href="infos-patients.html">Informations patients</a></li>
+            <li><a href="#">Mentions légales</a></li>
+            <li><a href="#">Politique de confidentialité</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>Contact</h4>
+          <ul class="footer-contact">
+            <li>Oujda, Maroc</li>
+            <li>+212 6 32 70 57 01</li>
+            <li>info@drlamyadiouri.com</li>
+          </ul>
+          <a href="contact.html" class="btn btn-light btn-sm">Prendre rendez-vous</a>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>© <span id="year"></span> Cabinet Dr DIOURI Lamya — Tous droits réservés.</p>
+        <p>Conçu avec exigence pour l'excellence médicale.</p>
+      </div>
+    </div>
+  </footer>
+
+  <a href="https://wa.me/212632705701?text=Bonjour%20Dr%20DIOURI%2C%20je%20souhaite%20prendre%20rendez-vous." target="_blank" rel="noopener" class="whatsapp-float" aria-label="WhatsApp - Prendre rendez-vous">
+    <svg viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+      <path d="M16.003 3.2a12.8 12.8 0 0 0-11.04 19.317L3.2 28.8l6.475-1.694A12.8 12.8 0 1 0 16.003 3.2zm0 23.36c-2 0-3.965-.535-5.682-1.547l-.407-.241-3.842 1.006 1.025-3.747-.265-.42a10.563 10.563 0 1 1 9.172 4.949zm5.823-7.913c-.319-.16-1.886-.93-2.18-1.036-.293-.107-.506-.16-.72.16-.213.32-.825 1.036-1.012 1.249-.187.213-.373.24-.692.08-.319-.16-1.348-.497-2.566-1.585-.948-.846-1.588-1.892-1.775-2.211-.187-.32-.02-.493.14-.652.144-.143.319-.373.479-.56.16-.187.213-.32.32-.534.107-.213.054-.4-.027-.56-.08-.16-.72-1.733-.986-2.373-.26-.626-.524-.54-.72-.55-.187-.008-.4-.01-.613-.01a1.179 1.179 0 0 0-.852.4c-.293.32-1.119 1.093-1.119 2.665 0 1.572 1.146 3.094 1.305 3.307.16.213 2.255 3.443 5.464 4.83.764.33 1.36.527 1.824.674.766.244 1.464.21 2.014.127.614-.092 1.886-.77 2.152-1.515.266-.745.266-1.385.187-1.515-.08-.133-.293-.213-.612-.373z"/>
+    </svg>
+  </a>
+
+  <script src="script.js"></script>
+</body>
+</html>

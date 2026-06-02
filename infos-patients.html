@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Informations patients du Cabinet Dr DIOURI Lamya à Oujda : préparation des examens, documents à apporter, déroulement, résultats, tarifs et assurances." />
+  <title>Informations patients — Préparation, déroulement, résultats | Dr DIOURI Lamya</title>
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Cpath d='M30 20 L30 80 L55 80 C72 80 82 67 82 50 C82 33 72 20 55 20 Z' stroke='%231a3a5c' stroke-width='6' fill='none'/%3E%3Ccircle cx='58' cy='50' r='8' fill='%231a3a5c'/%3E%3C/svg%3E" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300;400;500;600;700&family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <div class="cursor" id="cursor"></div>
+  <div class="cursor-follower" id="cursorFollower"></div>
+  <div class="progress-bar" id="progressBar"></div>
+
+  <nav class="navbar" id="navbar">
+    <div class="container nav-container">
+      <a href="index.html" class="logo">
+        <svg viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path d="M30 20 L30 80 L55 80 C72 80 82 67 82 50 C82 33 72 20 55 20 Z" stroke="currentColor" stroke-width="4" fill="none"/>
+          <circle cx="58" cy="50" r="6" fill="currentColor"/>
+          <line x1="35" y1="40" x2="48" y2="40" stroke="currentColor" stroke-width="3"/>
+          <line x1="35" y1="50" x2="48" y2="50" stroke="currentColor" stroke-width="3"/>
+          <line x1="35" y1="60" x2="48" y2="60" stroke="currentColor" stroke-width="3"/>
+        </svg>
+        <div class="logo-text">
+          <span class="logo-name">Dr DIOURI Lamya</span>
+          <span class="logo-sub">Médecin spécialiste en Radiologie</span>
+        </div>
+      </a>
+      <ul class="nav-menu" id="navMenu">
+        <li><a href="index.html" class="nav-link">Accueil</a></li>
+        <li><a href="cabinet.html" class="nav-link">Le cabinet</a></li>
+        <li><a href="examens.html" class="nav-link">Examens</a></li>
+        <li><a href="infos-patients.html" class="nav-link">Informations patients</a></li>
+        <li><a href="contact.html" class="nav-link">Contact</a></li>
+      </ul>
+      <div class="nav-actions">
+        <a href="contact.html" class="btn btn-primary btn-sm">
+          <span>Prendre rendez-vous</span>
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+        </a>
+        <button class="nav-toggle" id="navToggle" aria-label="Menu">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </div>
+  </nav>
+
+  <section class="page-hero">
+    <div class="container page-hero-inner">
+      <div class="page-hero-breadcrumb" data-reveal>
+        <a href="index.html">Accueil</a>
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 18l6-6-6-6"/></svg>
+        <span>Informations patients</span>
+      </div>
+      <h1 data-reveal data-reveal-delay="100">
+        Tout pour vous <span class="title-italic">préparer</span><br/>
+        en toute sérénité.
+      </h1>
+      <p class="page-hero-lead" data-reveal data-reveal-delay="200">
+        Informations pratiques, conseils et documents nécessaires pour préparer votre examen et comprendre chaque étape du parcours diagnostique.
+      </p>
+    </div>
+  </section>
+
+  <section class="patient-steps">
+    <div class="container">
+      <div class="section-head" data-reveal>
+        <span class="section-tag">Le parcours patient</span>
+        <h2 class="section-title">
+          Trois étapes <span class="title-italic">claires</span><br/>
+          pour votre examen.
+        </h2>
+      </div>
+
+      <div class="steps-grid">
+        <div class="step-card" data-reveal>
+          <div class="step-icon-wrap">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><rect x="3" y="4" width="18" height="18" rx="2"/><line x1="16" y1="2" x2="16" y2="6"/><line x1="8" y1="2" x2="8" y2="6"/><line x1="3" y1="10" x2="21" y2="10"/></svg>
+          </div>
+          <h3>Avant votre rendez-vous</h3>
+          <p>Quelques points essentiels à vérifier pour préparer sereinement votre examen.</p>
+          <ul class="step-list">
+            <li>Ordonnance médicale du médecin prescripteur</li>
+            <li>Pièce d'identité (CIN ou passeport)</li>
+            <li>Carte d'assurance / mutuelle</li>
+            <li>Anciens examens (radios, IRM, scanners)</li>
+            <li>À jeun 4 à 6h si injection prévue</li>
+            <li>Vessie pleine si échographie pelvienne</li>
+          </ul>
+        </div>
+
+        <div class="step-card" data-reveal data-reveal-delay="150">
+          <div class="step-icon-wrap">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M19 14c1.49-1.46 3-3.21 3-5.5A5.5 5.5 0 0 0 16.5 3c-1.76 0-3 .5-4.5 2-1.5-1.5-2.74-2-4.5-2A5.5 5.5 0 0 0 2 8.5c0 2.29 1.51 4.04 3 5.5l7 7Z"/></svg>
+          </div>
+          <h3>Le jour de l'examen</h3>
+          <p>Une équipe attentive vous accueille pour un examen dans les meilleures conditions.</p>
+          <ul class="step-list">
+            <li>Arrivez 10 minutes avant l'heure</li>
+            <li>Vêtements confortables, sans métal</li>
+            <li>Signalez tout traitement en cours</li>
+            <li>Indiquez une grossesse possible</li>
+            <li>Examen expliqué étape par étape</li>
+            <li>Présence d'un proche possible en pédiatrie</li>
+          </ul>
+        </div>
+
+        <div class="step-card" data-reveal data-reveal-delay="300">
+          <div class="step-icon-wrap">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/><polyline points="9 15 11 17 15 13"/></svg>
+          </div>
+          <h3>Après l'examen</h3>
+          <p>Remise et transmission de vos résultats dans les meilleurs délais.</p>
+          <ul class="step-list">
+            <li>Compte-rendu remis le jour même</li>
+            <li>Images sur clé USB ou via lien sécurisé</li>
+            <li>Transmission à votre médecin traitant</li>
+            <li>Explications claires si besoin</li>
+            <li>Conseils post-examen personnalisés</li>
+            <li>Disponibilité pour toute question</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="faq-section">
+    <div class="container">
+      <div class="section-head section-head-center" data-reveal>
+        <span class="section-tag">Questions fréquentes</span>
+        <h2 class="section-title">
+          Vos <span class="title-italic">questions</span>, nos réponses.
+        </h2>
+      </div>
+      <div class="faq-list" data-reveal data-reveal-delay="100">
+        <details class="faq-item">
+          <summary>Quels documents dois-je apporter le jour de l'examen ?</summary>
+          <div class="faq-item-body">Apportez impérativement votre ordonnance médicale, votre pièce d'identité, votre carte d'assurance ou de mutuelle, ainsi que tout examen antérieur en lien avec la zone à examiner (radiographies, scanners, IRM précédentes).</div>
+        </details>
+        <details class="faq-item">
+          <summary>Dois-je être à jeun avant l'examen ?</summary>
+          <div class="faq-item-body">Cela dépend de l'examen. Pour un scanner ou une IRM avec injection de produit de contraste, restez à jeun 4 à 6 heures avant le rendez-vous. Pour les autres examens, aucune restriction alimentaire n'est nécessaire sauf indication contraire.</div>
+        </details>
+        <details class="faq-item">
+          <summary>Quels sont les tarifs ? Comment se passe le remboursement ?</summary>
+          <div class="faq-item-body">Les tarifs varient selon l'examen et sont communiqués lors de la prise de rendez-vous. La majorité des examens sont remboursés par la CNSS, la CNOPS, et les mutuelles privées. Le cabinet fournit tous les documents nécessaires au remboursement (feuille de soins, facture détaillée).</div>
+        </details>
+        <details class="faq-item">
+          <summary>Comment se déroule la prise de rendez-vous ?</summary>
+          <div class="faq-item-body">Vous pouvez prendre rendez-vous par téléphone au +212 6 32 70 57 01, via WhatsApp, ou en remplissant le formulaire en ligne sur la page Contact. Nous vous répondons sous 24 heures.</div>
+        </details>
+        <details class="faq-item">
+          <summary>Combien de temps dure un examen ?</summary>
+          <div class="faq-item-body">La durée varie selon l'examen : 5–10 min pour une radiographie, 15–30 min pour une échographie, 10–20 min pour un scanner, et 20–45 min pour une IRM. Prévoyez en moyenne 30 à 60 min sur place, accueil et préparation inclus.</div>
+        </details>
+        <details class="faq-item">
+          <summary>Puis-je conduire après mon examen ?</summary>
+          <div class="faq-item-body">Oui, pour la grande majorité des examens. Si un sédatif léger a été administré, ou si une injection particulière a été réalisée, un accompagnant peut être recommandé. Cela vous sera précisé à la prise de rendez-vous.</div>
+        </details>
+        <details class="faq-item">
+          <summary>Quand vais-je recevoir mes résultats ?</summary>
+          <div class="faq-item-body">Dans la plupart des cas, le compte-rendu est remis le jour même de l'examen. Pour des analyses plus complexes, comptez 24 à 48 heures. Le compte-rendu est également transmis à votre médecin prescripteur.</div>
+        </details>
+        <details class="faq-item">
+          <summary>Le cabinet accepte-t-il les enfants ?</summary>
+          <div class="faq-item-body">Oui. L'imagerie pédiatrique est l'un de nos domaines d'expertise. Nous adoptons une approche douce et adaptée, dans un environnement rassurant. Un parent peut accompagner l'enfant pendant l'examen.</div>
+        </details>
+      </div>
+    </div>
+  </section>
+
+  <section class="resources">
+    <div class="container">
+      <div class="resources-grid">
+        <div class="resource-card" data-reveal>
+          <div class="resource-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/><line x1="16" y1="13" x2="8" y2="13"/><line x1="16" y1="17" x2="8" y2="17"/></svg>
+          </div>
+          <h3>Documents nécessaires</h3>
+          <p>Liste complète des documents à apporter selon votre type d'examen.</p>
+          <a href="contact.html" class="resource-link">
+            <span>Nous contacter</span>
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+          </a>
+        </div>
+        <div class="resource-card" data-reveal data-reveal-delay="150">
+          <div class="resource-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M19 21H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h11l5 5v11a2 2 0 0 1-2 2z"/><polyline points="17 21 17 13 7 13 7 21"/><polyline points="7 3 7 8 15 8"/></svg>
+          </div>
+          <h3>Tarifs &amp; assurances</h3>
+          <p>Informations sur les tarifs et la prise en charge par votre assurance.</p>
+          <a href="contact.html" class="resource-link">
+            <span>Demander un devis</span>
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+          </a>
+        </div>
+        <div class="resource-card" data-reveal data-reveal-delay="300">
+          <div class="resource-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><circle cx="12" cy="12" r="10"/><line x1="12" y1="8" x2="12" y2="12"/><line x1="12" y1="16" x2="12.01" y2="16"/></svg>
+          </div>
+          <h3>Urgences</h3>
+          <p>En cas d'urgence ou pour toute question, notre équipe vous oriente rapidement.</p>
+          <a href="tel:+212632705701" class="resource-link">
+            <span>Appeler le cabinet</span>
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-top">
+        <div class="footer-brand">
+          <a href="index.html" class="logo logo-footer">
+            <svg viewBox="0 0 100 100" fill="none"><path d="M30 20 L30 80 L55 80 C72 80 82 67 82 50 C82 33 72 20 55 20 Z" stroke="currentColor" stroke-width="4" fill="none"/><circle cx="58" cy="50" r="6" fill="currentColor"/><line x1="35" y1="40" x2="48" y2="40" stroke="currentColor" stroke-width="3"/><line x1="35" y1="50" x2="48" y2="50" stroke="currentColor" stroke-width="3"/><line x1="35" y1="60" x2="48" y2="60" stroke="currentColor" stroke-width="3"/></svg>
+            <div class="logo-text">
+              <span class="logo-name">Dr DIOURI Lamya</span>
+              <span class="logo-sub">Médecin spécialiste en Radiologie</span>
+            </div>
+          </a>
+          <p class="footer-desc">L'imagerie médicale de précision au service de votre santé.</p>
+        </div>
+        <div class="footer-col">
+          <h4>Cabinet</h4>
+          <ul>
+            <li><a href="cabinet.html">Le cabinet</a></li>
+            <li><a href="cabinet.html#expertise">Expertise</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>Examens</h4>
+          <ul>
+            <li><a href="examens.html#irm">IRM</a></li>
+            <li><a href="examens.html#scanner">Scanner</a></li>
+            <li><a href="examens.html#echographie">Échographie</a></li>
+            <li><a href="examens.html#radiographie">Radiographie</a></li>
+            <li><a href="examens.html#mammographie">Mammographie</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>Informations</h4>
+          <ul>
+            <li><a href="infos-patients.html">Informations patients</a></li>
+            <li><a href="#">Mentions légales</a></li>
+            <li><a href="#">Politique de confidentialité</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>Contact</h4>
+          <ul class="footer-contact">
+            <li>Oujda, Maroc</li>
+            <li>+212 6 32 70 57 01</li>
+            <li>info@drlamyadiouri.com</li>
+          </ul>
+          <a href="contact.html" class="btn btn-light btn-sm">Prendre rendez-vous</a>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>© <span id="year"></span> Cabinet Dr DIOURI Lamya — Tous droits réservés.</p>
+        <p>Conçu avec exigence pour l'excellence médicale.</p>
+      </div>
+    </div>
+  </footer>
+
+  <a href="https://wa.me/212632705701?text=Bonjour%20Dr%20DIOURI%2C%20je%20souhaite%20prendre%20rendez-vous." target="_blank" rel="noopener" class="whatsapp-float" aria-label="WhatsApp - Prendre rendez-vous">
+    <svg viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+      <path d="M16.003 3.2a12.8 12.8 0 0 0-11.04 19.317L3.2 28.8l6.475-1.694A12.8 12.8 0 1 0 16.003 3.2zm0 23.36c-2 0-3.965-.535-5.682-1.547l-.407-.241-3.842 1.006 1.025-3.747-.265-.42a10.563 10.563 0 1 1 9.172 4.949zm5.823-7.913c-.319-.16-1.886-.93-2.18-1.036-.293-.107-.506-.16-.72.16-.213.32-.825 1.036-1.012 1.249-.187.213-.373.24-.692.08-.319-.16-1.348-.497-2.566-1.585-.948-.846-1.588-1.892-1.775-2.211-.187-.32-.02-.493.14-.652.144-.143.319-.373.479-.56.16-.187.213-.32.32-.534.107-.213.054-.4-.027-.56-.08-.16-.72-1.733-.986-2.373-.26-.626-.524-.54-.72-.55-.187-.008-.4-.01-.613-.01a1.179 1.179 0 0 0-.852.4c-.293.32-1.119 1.093-1.119 2.665 0 1.572 1.146 3.094 1.305 3.307.16.213 2.255 3.443 5.464 4.83.764.33 1.36.527 1.824.674.766.244 1.464.21 2.014.127.614-.092 1.886-.77 2.152-1.515.266-.745.266-1.385.187-1.515-.08-.133-.293-.213-.612-.373z"/>
+    </svg>
+  </a>
+
+  <script src="script.js"></script>
+</body>
+</html>
