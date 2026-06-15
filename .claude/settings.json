@@ -1,7 +1,46 @@
 {
   "permissions": {
     "allow": [
-      "Bash(grep -iE \"\\\\.\\(jpg|jpeg|png|webp\\)$\")"
+      "Bash(grep -iE \"\\\\.\\(jpg|jpeg|png|webp\\)$\")",
+      "Bash(lsof -i :3000 -sTCP:LISTEN -t)",
+      "Bash(sips -s format jpeg -s formatOptions 82 --resampleWidth 1200 \"/Users/said/Downloads/dr lami/1.jpg\" --out images/mammographe-siemens.jpg)",
+      "Bash(sips -s format jpeg -s formatOptions 82 --resampleWidth 1200 \"/Users/said/Downloads/dr lami/2.jpg\" --out images/irm-siemens.jpg)",
+      "Bash(sips -s format jpeg -s formatOptions 82 --resampleWidth 1200 \"/Users/said/Downloads/dr lami/3.jpg\" --out images/scanner-siemens.jpg)",
+      "Bash(sips -s format jpeg -s formatOptions 82 --resampleWidth 1200 \"/Users/said/Downloads/dr lami/4.jpg\" --out images/facade-hpim.jpg)",
+      "Bash(sips -s format jpeg -s formatOptions 82 --resampleWidth 1200 \"/Users/said/Downloads/dr lami/5.jpg\" --out images/entree-radiologie.jpg)",
+      "Bash(curl -s http://localhost:3000/__TRACKED_VAR__)",
+      "Bash(wait b9tefx27d *)",
+      "Bash(sips -g pixelHeight -g pixelWidth -g format /Users/said/Downloads/drlamyadiouri.png)",
+      "Bash(sips -s format png --resampleHeightWidth 512 512 /Users/said/Downloads/drlamyadiouri.png --out images/logo.png)",
+      "Bash(sips -s format png --resampleHeightWidth 180 180 /Users/said/Downloads/drlamyadiouri.png --out images/apple-touch-icon.png)",
+      "Bash(sips -s format png --resampleHeightWidth 32 32 /Users/said/Downloads/drlamyadiouri.png --out images/favicon-32.png)",
+      "Bash(python3 /tmp/replace_logo.py)",
+      "Bash(grep -rn \"logodrlamyadiouri\" *.html *.css *.js)",
+      "Bash(rm -v \"images/ logodrlamyadiouri.png\")",
+      "Bash(npx playwright *)",
+      "Bash(node responsive_audit.js)",
+      "Bash(node find_overflow.js)",
+      "Bash(sed -i '' 's|cabinet.html|infos-patients.html|' find_overflow.js)",
+      "Bash(sed -i '' 's|infos-patients.html|examens.html|' find_overflow.js)",
+      "Bash(sed -i '' 's|examens.html|contact.html|' find_overflow.js)",
+      "Bash(sed -i '' 's|contact.html|/|' find_overflow.js)",
+      "Bash(pkill -f \"node responsive_audit\")",
+      "Bash(echo \"PID=$!\")",
+      "Bash(pkill -9 -f \"responsive_audit\")",
+      "Bash(pkill -9 -f \"chrome-headless-shell\")",
+      "Bash(curl -s -o /dev/null -w \"%{http_code}\\\\n\" http://localhost:3000/)",
+      "Bash(curl -s -o /dev/null -w \"%{http_code}\\\\n\" http://localhost:3000/cabinet.html)",
+      "Bash(nohup node *)",
+      "Bash(echo \"started pid=$!\")",
+      "Bash(node /tmp/test_mobile_menu.js)",
+      "Bash(node /tmp/test_footer.js)",
+      "Bash(node /tmp/test_footer_btn.js)",
+      "Bash(rm -rf /tmp/audit-v3/*.png /tmp/audit-v3/results.json)",
+      "Bash(node /tmp/test_icons.js)",
+      "Bash(node /tmp/test_icons2.js)",
+      "Bash(node /tmp/test_icons3.js)",
+      "Bash(node /tmp/test_icons4.js)",
+      "Bash(node /tmp/check_features_pad.js)"
     ]
   }
 }
