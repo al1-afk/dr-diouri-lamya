@@ -28,7 +28,8 @@
   <link rel="apple-touch-icon" sizes="180x180" href="images/apple-touch-icon.png" />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300;400;500;600;700&family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet" />
+  <link rel="preload" as="image" type="image/webp" imagesrcset="images/irm-siemens-sm.webp 600w, images/irm-siemens.webp 1000w" imagesizes="(max-width: 600px) 100vw, 1000px" fetchpriority="high" />
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300;400;500;600;700&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="styles.css" />
 
   <script type="application/ld+json">
@@ -162,7 +163,10 @@
       <div class="hero-visual" data-reveal data-reveal-delay="200">
         <div class="hero-image-wrap">
           <div class="hero-image-frame">
-            <img src="images/irm-siemens.jpg" alt="IRM Siemens MAGNETOM Amira — Centre d'Imagerie Médicale Dr DIOURI Lamya, Oujda" width="1200" height="1600" loading="eager" decoding="async" />
+            <picture>
+              <source type="image/webp" srcset="images/irm-siemens-sm.webp 600w, images/irm-siemens.webp 1000w" sizes="(max-width: 600px) 100vw, 1000px" />
+              <img src="images/irm-siemens.jpg" alt="IRM Siemens MAGNETOM Amira — Centre d'Imagerie Médicale Dr DIOURI Lamya, Oujda" width="1200" height="1600" fetchpriority="high" decoding="async" />
+            </picture>
             <div class="hero-image-overlay"></div>
           </div>
           <div class="floating-card floating-card-1">
@@ -266,7 +270,10 @@
       </div>
       <div class="services-grid">
         <article class="service-card" data-reveal>
-          <div class="service-img"><img src="images/irm-siemens.jpg" alt="IRM" width="800" height="600" loading="lazy" decoding="async" /></div>
+          <div class="service-img"><picture>
+  <source type="image/webp" srcset="images/irm-siemens-sm.webp 600w, images/irm-siemens.webp 1000w" sizes="(max-width: 600px) 100vw, 1000px" />
+  <img src="images/irm-siemens.jpg" alt="IRM" width="800" height="600" loading="lazy" decoding="async" />
+</picture></div>
           <div class="service-body">
             <div class="service-num">01</div>
             <h3>IRM</h3>
@@ -278,7 +285,10 @@
           </div>
         </article>
         <article class="service-card" data-reveal data-reveal-delay="100">
-          <div class="service-img"><img src="images/scanner-siemens.jpg" alt="Scanner" width="800" height="600" loading="lazy" decoding="async" /></div>
+          <div class="service-img"><picture>
+  <source type="image/webp" srcset="images/scanner-siemens-sm.webp 600w, images/scanner-siemens.webp 1000w" sizes="(max-width: 600px) 100vw, 1000px" />
+  <img src="images/scanner-siemens.jpg" alt="Scanner" width="800" height="600" loading="lazy" decoding="async" />
+</picture></div>
           <div class="service-body">
             <div class="service-num">02</div>
             <h3>Scanner</h3>
@@ -290,7 +300,10 @@
           </div>
         </article>
         <article class="service-card" data-reveal data-reveal-delay="200">
-          <div class="service-img"><img src="images/entree-radiologie.jpg" alt="Échographie" width="800" height="600" loading="lazy" decoding="async" /></div>
+          <div class="service-img"><picture>
+  <source type="image/webp" srcset="images/entree-radiologie-sm.webp 600w, images/entree-radiologie.webp 1000w" sizes="(max-width: 600px) 100vw, 1000px" />
+  <img src="images/entree-radiologie.jpg" alt="Échographie" width="800" height="600" loading="lazy" decoding="async" />
+</picture></div>
           <div class="service-body">
             <div class="service-num">03</div>
             <h3>Échographie</h3>

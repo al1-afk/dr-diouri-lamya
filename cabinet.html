@@ -10,7 +10,7 @@
   <link rel="apple-touch-icon" sizes="180x180" href="images/apple-touch-icon.png" />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300;400;500;600;700&family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300;400;500;600;700&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
@@ -69,10 +69,16 @@
       <div class="about-grid">
         <div class="about-images" data-reveal>
           <div class="about-img-main">
-            <img src="images/entree-radiologie.jpg" alt="Entrée du service de Radiologie — HPIM Oujda" width="1200" height="1600" loading="lazy" decoding="async" />
+            <picture>
+              <source type="image/webp" srcset="images/entree-radiologie-sm.webp 600w, images/entree-radiologie.webp 1000w" sizes="(max-width: 600px) 100vw, 1000px" />
+              <img src="images/entree-radiologie.jpg" alt="Entrée du service de Radiologie — HPIM Oujda" width="1200" height="1600" loading="lazy" decoding="async" />
+            </picture>
           </div>
           <div class="about-img-secondary">
-            <img src="images/facade-hpim.jpg" alt="Hôpital Privé International de l'Oriental (HPIM) — Oujda" width="1200" height="1600" loading="lazy" decoding="async" />
+            <picture>
+              <source type="image/webp" srcset="images/facade-hpim-sm.webp 600w, images/facade-hpim.webp 1000w" sizes="(max-width: 600px) 100vw, 1000px" />
+              <img src="images/facade-hpim.jpg" alt="Hôpital Privé International de l'Oriental (HPIM) — Oujda" width="1200" height="1600" loading="lazy" decoding="async" />
+            </picture>
           </div>
           <div class="about-experience">
             <div class="exp-number">15+</div>
@@ -183,7 +189,10 @@
       </div>
       <div class="expertise-grid">
         <div class="expertise-card" data-reveal>
-          <div class="ec-image"><img src="images/irm-siemens.jpg" alt="Imagerie ostéo-articulaire" width="900" height="600" loading="lazy" decoding="async" /></div>
+          <div class="ec-image"><picture>
+  <source type="image/webp" srcset="images/irm-siemens-sm.webp 600w, images/irm-siemens.webp 1000w" sizes="(max-width: 600px) 100vw, 1000px" />
+  <img src="images/irm-siemens.jpg" alt="Imagerie ostéo-articulaire" width="900" height="600" loading="lazy" decoding="async" />
+</picture></div>
           <div class="ec-content">
             <span class="ec-tag">Ostéo-articulaire</span>
             <h3>Imagerie<br/>musculo-squelettique</h3>
@@ -191,7 +200,10 @@
           </div>
         </div>
         <div class="expertise-card expertise-tall" data-reveal data-reveal-delay="100">
-          <div class="ec-image"><img src="images/irm-siemens.jpg" alt="Neuro-imagerie" width="900" height="800" loading="lazy" decoding="async" /></div>
+          <div class="ec-image"><picture>
+  <source type="image/webp" srcset="images/irm-siemens-sm.webp 600w, images/irm-siemens.webp 1000w" sizes="(max-width: 600px) 100vw, 1000px" />
+  <img src="images/irm-siemens.jpg" alt="Neuro-imagerie" width="900" height="800" loading="lazy" decoding="async" />
+</picture></div>
           <div class="ec-content">
             <span class="ec-tag">Neurologique</span>
             <h3>Neuro-imagerie<br/>avancée</h3>
@@ -199,7 +211,10 @@
           </div>
         </div>
         <div class="expertise-card" data-reveal data-reveal-delay="200">
-          <div class="ec-image"><img src="images/scanner-siemens.jpg" alt="Imagerie abdomino-pelvienne" width="900" height="600" loading="lazy" decoding="async" /></div>
+          <div class="ec-image"><picture>
+  <source type="image/webp" srcset="images/scanner-siemens-sm.webp 600w, images/scanner-siemens.webp 1000w" sizes="(max-width: 600px) 100vw, 1000px" />
+  <img src="images/scanner-siemens.jpg" alt="Imagerie abdomino-pelvienne" width="900" height="600" loading="lazy" decoding="async" />
+</picture></div>
           <div class="ec-content">
             <span class="ec-tag">Abdominal</span>
             <h3>Imagerie<br/>abdomino-pelvienne</h3>
@@ -207,7 +222,10 @@
           </div>
         </div>
         <div class="expertise-card" data-reveal data-reveal-delay="100">
-          <div class="ec-image"><img src="images/scanner-siemens.jpg" alt="Imagerie cardio-pulmonaire" width="900" height="600" loading="lazy" decoding="async" /></div>
+          <div class="ec-image"><picture>
+  <source type="image/webp" srcset="images/scanner-siemens-sm.webp 600w, images/scanner-siemens.webp 1000w" sizes="(max-width: 600px) 100vw, 1000px" />
+  <img src="images/scanner-siemens.jpg" alt="Imagerie cardio-pulmonaire" width="900" height="600" loading="lazy" decoding="async" />
+</picture></div>
           <div class="ec-content">
             <span class="ec-tag">Thoracique</span>
             <h3>Imagerie<br/>cardio-pulmonaire</h3>
@@ -215,7 +233,10 @@
           </div>
         </div>
         <div class="expertise-card expertise-tall" data-reveal data-reveal-delay="200">
-          <div class="ec-image"><img src="images/irm-siemens.jpg" alt="Imagerie pédiatrique" width="900" height="800" loading="lazy" decoding="async" /></div>
+          <div class="ec-image"><picture>
+  <source type="image/webp" srcset="images/irm-siemens-sm.webp 600w, images/irm-siemens.webp 1000w" sizes="(max-width: 600px) 100vw, 1000px" />
+  <img src="images/irm-siemens.jpg" alt="Imagerie pédiatrique" width="900" height="800" loading="lazy" decoding="async" />
+</picture></div>
           <div class="ec-content">
             <span class="ec-tag">Pédiatrique</span>
             <h3>Imagerie<br/>pédiatrique</h3>
@@ -223,7 +244,10 @@
           </div>
         </div>
         <div class="expertise-card" data-reveal data-reveal-delay="300">
-          <div class="ec-image"><img src="images/mammographe-siemens.jpg" alt="Sénologie — imagerie du sein" width="900" height="600" loading="lazy" decoding="async" /></div>
+          <div class="ec-image"><picture>
+  <source type="image/webp" srcset="images/mammographe-siemens-sm.webp 600w, images/mammographe-siemens.webp 1000w" sizes="(max-width: 600px) 100vw, 1000px" />
+  <img src="images/mammographe-siemens.jpg" alt="Sénologie — imagerie du sein" width="900" height="600" loading="lazy" decoding="async" />
+</picture></div>
           <div class="ec-content">
             <span class="ec-tag">Sénologie</span>
             <h3>Imagerie<br/>du sein</h3>
