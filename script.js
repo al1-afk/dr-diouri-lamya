@@ -147,12 +147,37 @@ document.addEventListener('DOMContentLoaded', () => {
     });
   });
 
-  /* -------------------- Form -------------------- */
+  /* -------------------- Form → WhatsApp -------------------- */
   const form = document.getElementById('contactForm');
   const success = document.getElementById('formSuccess');
   if (form && success) {
+    const WHATSAPP_NUMBER = '212632705701';
     form.addEventListener('submit', (e) => {
       e.preventDefault();
+      const d = new FormData(form);
+      const firstname = (d.get('firstname') || '').toString().trim();
+      const lastname  = (d.get('lastname')  || '').toString().trim();
+      const email     = (d.get('email')     || '').toString().trim();
+      const phone     = (d.get('phone')     || '').toString().trim();
+      const exam      = (d.get('exam')      || '').toString().trim();
+      const message   = (d.get('message')   || '').toString().trim();
+
+      const lines = [
+        '*Nouvelle demande de rendez-vous*',
+        '',
+        '*Nom complet :* ' + firstname + ' ' + lastname,
+        '*Email :* ' + email,
+        '*Téléphone :* ' + phone,
+        '*Examen souhaité :* ' + exam,
+      ];
+      if (message) {
+        lines.push('', '*Message :*', message);
+      }
+      lines.push('', '— Envoyé depuis drlamyadiouri.com');
+
+      const url = 'https://wa.me/' + WHATSAPP_NUMBER + '?text=' + encodeURIComponent(lines.join('\n'));
+      window.open(url, '_blank', 'noopener');
+
       success.classList.add('active');
       form.reset();
       setTimeout(() => success.classList.remove('active'), 6000);
