@@ -200,7 +200,8 @@ ul { list-style: none; }
 @media (max-width: 900px) {
   .logo svg,
   .logo-img { width: 44px; height: 44px; }
-  .logo-sub { display: none; }
+  .logo-sub:not(.logo-sub-hpim) { display: none; }
+  .logo-sub-hpim { display: block; }
 }
 @media (max-width: 520px) {
   .logo svg,
@@ -208,6 +209,7 @@ ul { list-style: none; }
   .logo { gap: 10px; }
   .logo-name { font-size: 15px; letter-spacing: -0.02em; }
   .logo-text { max-width: none; }
+  .logo-sub-hpim { font-size: 8px; letter-spacing: 0; margin-top: 2px; }
 }
 @media (max-width: 480px) {
   .nav-actions .btn-sm { padding: 9px 14px; font-size: 12px; gap: 6px; }
@@ -218,7 +220,6 @@ ul { list-style: none; }
   .nav-actions .btn-sm span { display: none; }
   .nav-actions .btn-sm { padding: 10px 12px; }
   .nav-actions .btn-sm svg { width: 16px; height: 16px; }
-  .logo-text { display: none; }
   .logo svg,
   .logo-img { width: 42px; height: 42px; }
 }
