@@ -163,17 +163,17 @@ document.addEventListener('DOMContentLoaded', () => {
       const message   = (d.get('message')   || '').toString().trim();
 
       const lines = [
-        '*Nouvelle demande de rendez-vous*',
+        '*Nouvelle réservation*',
         '',
-        '*Nom complet :* ' + firstname + ' ' + lastname,
-        '*Email :* ' + email,
-        '*Téléphone :* ' + phone,
-        '*Examen souhaité :* ' + exam,
+        'Nom : ' + lastname,
+        'Prénom : ' + firstname,
+        'Email : ' + email,
+        'Téléphone : ' + phone,
+        "Type d'examen : " + exam,
       ];
       if (message) {
-        lines.push('', '*Message :*', message);
+        lines.push('Message : ' + message);
       }
-      lines.push('', '— Envoyé depuis drlamyadiouri.com');
 
       const url = 'https://wa.me/' + WHATSAPP_NUMBER + '?text=' + encodeURIComponent(lines.join('\n'));
       window.open(url, '_blank', 'noopener');
